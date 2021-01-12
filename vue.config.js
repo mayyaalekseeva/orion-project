@@ -14,5 +14,8 @@ module.exports = {
             }
 
         }
-    }
+    },
+    publicPath: '/<orion-project>/'
+
 }
+

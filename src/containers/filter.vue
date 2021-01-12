@@ -5,7 +5,7 @@
       <i class="fas fa-search"></i>
     </button>
     <div class="filteredResultBlock" v-show="filtered.length > 0">
-      <item v-for="item of filtered" type="filtered" key="item.id_product" :item="item" />
+      <item v-for="item of filtered" type="filtered" :key="item.id_product" :item="item" />
     </div>
   </form>
 </template>
@@ -39,7 +39,7 @@ export default {
   right: 2px;
   padding: 10px;
   border-radius: 7px;
-  width: 150%;
+  width: 100%;
   background-color: #fff;
 }
 .filtered-item {

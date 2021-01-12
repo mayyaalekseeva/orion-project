@@ -4,8 +4,7 @@
       <img src="./assets/logo.png" alt="logo" width="150px">
     <div id="nav">
       <router-link to="/">Shop</router-link> |
-      <router-link to="/about">About</router-link> |
-      <router-link to="/admin">Admin Panel</router-link>
+      <router-link to="/about">About</router-link>
     </div>
     </div>
     <router-view />

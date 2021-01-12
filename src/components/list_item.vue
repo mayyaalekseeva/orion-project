@@ -1,8 +1,9 @@
 <template>
   <div :class="calcWrapClass">
-    <img :src="calcImg" v-if="(type !== 'adminPanel') && (type !== 'filtered')" alt="_" />
+    
     <template v-if="type === 'catalog'">
-      <div class="desc">
+        <div class="desc">
+        <img src="../assets/300x200.jpg" v-if="(type !== 'filtered')" alt="product" />
         <h1>{{ item.product_name }}</h1>
         <p>{{ item.price }}</p>
         <button
@@ -13,6 +14,7 @@
       </div>
     </template>
     <template v-else-if="type === 'cart'">
+        <img src="../assets/100x80.jpg" v-if="(type !== 'filtered')" alt="product" />
       <div class="product-desc">
         <p class="product-title">{{ item.product_name }}</p>
         <p class="product-quantity">Количество: {{ item.quantity }}</p>
@@ -36,7 +38,7 @@
       </div>
     </template>
     <template v-else-if="type === 'filtered'">
-      <img class="filtered" src="https://placehold.it/50x40" />
+      <img class="filtered" src="../assets/50x40.jpg" />
       <div class="descp">
         <h1 class="descpHead">{{ item.product_name }}</h1>
         <button class="buy-btn" name="buy-btn" @click="$parent.$parent.$refs.cart.addItem(item)">Купить</button>
@@ -47,26 +49,20 @@
 
 <script>
 export default {
-  // props: ['item', 'type']
+  
   props: {
     item: { type: Object },
     type: { type: String, default: "catalog" }
   },
   computed: {
     calcWrapClass() {
-      console.log("Я пытаюсь понять какой враппер оформить")
-      if (this.type == "catalog") {
+        if (this.type == "catalog") {
         return "product-item"
       } else if (this.type == "filtered") {
         return "filtered-item"
       } else {
         return "cart-item"
       }
-    },
-    calcImg() {
-      return `https://placehold.it/${
-        this.type === "catalog" ? "300x200" : "100x80"
-      }`
     }
   }
 }

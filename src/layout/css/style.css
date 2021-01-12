@@ -48,6 +48,7 @@ p {
 .product-item{
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 200px;
     border-radius: 5px;
     overflow: hidden;
