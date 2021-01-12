@@ -1,0 +1,42 @@
+[
+    {
+     "id_product": 1,
+     "product_name": "Ethiopia",
+     "price": 1000
+    },
+    {
+     "id_product": 2,
+     "product_name": "Kenya",
+     "price": 1350
+    },
+    {
+     "id_product": 3,
+     "product_name": "Brazil",
+     "price": 1700
+    },
+    {
+     "id_product": 4,
+     "product_name": "Rwanda",
+     "price": 970
+    },
+    {
+     "id_product": 5,
+     "product_name": "Burundi",
+     "price": 1340
+    },
+    {
+     "id_product": 6,
+     "product_name": "Columbia",
+     "price": 1560
+    },
+    {
+     "id_product": 7,
+     "product_name": "Costa-Rica",
+     "price": 1220
+    },
+    {
+     "id_product": 8,
+     "product_name": "Panama",
+     "price": 2400
+    }
+]
