@@ -36,13 +36,17 @@ export default {
 <style>
 .filteredResultBlock {
   position: absolute;
-  width: 100%;
+  right: 2px;
+  padding: 10px;
+  border-radius: 7px;
+  width: 150%;
   background-color: #fff;
 }
 .filtered-item {
   display: flex;
   justify-content: space-between;
   padding: 4px;
+  margin: 4px;
 }
 img.filtered {
   height: 30px;
@@ -50,7 +54,7 @@ img.filtered {
 .descp {
   display: flex;
   height: 30px;
-  font-size: 0.4em;
+  font-size: 0.5em;
   color: #333;
   justify-content: space-between;
 }

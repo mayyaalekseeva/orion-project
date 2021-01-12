@@ -12,7 +12,7 @@ export default {
     return {
       items: [],
       isLoaded: false,
-      url: "/api/catalog",
+      url: "https://raw.githubusercontent.com/mayyaalekseeva/orion-project/master/server/db/catalog.json",
       searchText: ""
     }
   },
@@ -27,12 +27,7 @@ export default {
     this.$parent
       .get(this.url)
       .then(data => (this.items = data))
-      .then(() => {
-        this.$parent.catalogIsLoaded = true
-      })
-      .then(() => {
-        this.$parent.adminPanelIsShown = false
-      })
+      
   }
 }
 </script>
