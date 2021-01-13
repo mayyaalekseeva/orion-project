@@ -24,20 +24,7 @@
         <button name="del-btn" class="del-btn" @click="$parent.removeProduct(item)">&times;</button>
       </div>
     </template>
-    <template v-else-if="type === 'adminPanel'">
-      <div class="product-item">
-        <h1>Add new item</h1>
-        <input
-          type="text"
-          name="name"
-          placeholder="name"
-          v-model.lazy="$parent.newObj.product_name"
-        />
-        <input type="text" name="price" placeholder="price" v-model.lazy="$parent.newObj.price" />
-        <button class="buy-btn" @click="$parent.newItem($parent.newObj)">add</button>
-      </div>
-    </template>
-    <template v-else-if="type === 'filtered'">
+       <template v-else-if="type === 'filtered'">
       <img class="filtered" src="../assets/50x40.jpg" />
       <div class="descp">
         <h1 class="descpHead">{{ item.product_name }}</h1>
