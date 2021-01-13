@@ -11,16 +11,8 @@ export default {
   data() {
     return {
       items: [],
-      isLoaded: false,
       url: "https://raw.githubusercontent.com/mayyaalekseeva/orion-project/master/json/catalog.json",
       searchText: ""
-    }
-  },
-  methods: {
-    searchItem() {
-      return this.items.filter(
-        elem => elem.product_name.toLowerCase().indexOf(this.searchText) > -1
-      )
     }
   },
   mounted() {
