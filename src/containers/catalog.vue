@@ -12,7 +12,7 @@ export default {
     return {
       items: [],
       isLoaded: false,
-      url: "https://raw.githubusercontent.com/mayyaalekseeva/orion-project/master/server/db/catalog.json",
+      url: "https://raw.githubusercontent.com/mayyaalekseeva/orion-project/master/json/catalog.json",
       searchText: ""
     }
   },

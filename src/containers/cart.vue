@@ -20,7 +20,7 @@ export default {
   data() {
     return {
       items: [],
-      url: "https://raw.githubusercontent.com/mayyaalekseeva/orion-project/master/server/db/cart.json"
+      url: "https://raw.githubusercontent.com/mayyaalekseeva/orion-project/master/json/cart.json"
     }
   },
   methods: {
